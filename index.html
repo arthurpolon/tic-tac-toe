@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+
+  <title>Document</title>
+</head>
+
+<style>
+  html {
+    font-size: 48px;
+  }
+
+  #game {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cell {
+    width: 64px;
+    height: 64px;
+
+    border: 1px solid gray;
+
+    text-align: center;
+  }
+</style>
+
+<body>
+  <div id="game">
+    <div class="row">
+      <div id="row0-col0" class="cell"></div>
+      <div id="row0-col1" class="cell"></div>
+      <div id="row0-col2" class="cell"></div>
+    </div>
+    <div class="row">
+      <div id="row1-col0" class="cell"></div>
+      <div id="row1-col1" class="cell"></div>
+      <div id="row1-col2" class="cell"></div>
+    </div>
+    <div class="row">
+      <div id="row2-col0" class="cell"></div>
+      <div id="row2-col1" class="cell"></div>
+      <div id="row2-col2" class="cell"></div>
+    </div>
+  </div>
+
+  <div id="output"></div>
+  <button id="reset">Reset</button>
+</body>
+
+</html>
